@@ -17,11 +17,11 @@ module.exports = (env) => {
   return {
 
     entry: {
-      "asistencia-ceez": path.resolve(__dirname, 'index.js'),
+      "ceez-asistencia": path.resolve(__dirname, 'src/routes/index.js'),
     },
     output: {
       path: path.resolve(__dirname, 'dist'),
-      filename: 'js/[name].[hash].js',
+      filename: 'js/[name].js',
       publicPath: path.resolve(__dirname, 'dist')+"/",
       chunkFilename: 'js/[id].[chunkhash].js',
     },
