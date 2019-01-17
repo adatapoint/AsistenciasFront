@@ -1,14 +1,16 @@
 import React, { Component } from 'react';
 import { Container, Card, Button, Icon } from 'semantic-ui-react';
 import './asistente.css'
+import DeletePostButton from './deletePostButton';
 
 export default class Asistente extends Component {
     render(){
         return (
-            <Container className="container">
+            <Card className="card">
                 <Card.Content >
-                    <Card.Header className="header">Vincent Restrepo - vincentrestrepo@gmail.com</Card.Header> 
-                    <Card.Description>Cc. 1128439028</Card.Description>
+                    <Card.Header className="header">Vincent Restrepo</Card.Header> 
+                    <Card.Description>vincentrestrepo@gmail.com</Card.Description>
+                    <Card.Description>1128439028</Card.Description>
                 </Card.Content>
                 <div className="divider"/>
                 <Card.Content extra>
@@ -25,11 +27,9 @@ export default class Asistente extends Component {
                         </Button>
                     </Button.Group>
                         <div className="divider"/>
-                        <Button circular basic color='red' title="Eliminar usuario">
-                            <Icon name="remove user" />
-                        </Button>
+                        <DeletePostButton />
                 </Card.Content>
-            </Container>
+            </Card>
         )
     }
 }
