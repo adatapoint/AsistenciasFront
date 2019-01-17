@@ -1,0 +1,20 @@
+.container {
+    margin-right: 15px;
+    display: inline-block;
+    border: 0.5px;
+    border-style: solid;
+    cursor: pointer;
+    width: 260px;
+    vertical-align: top;
+    padding: 20px;
+}
+
+.divider {
+    width: 15px;
+    height: auto;
+    display: inline-block;
+}
+
+.header {
+    font-size: 120%;
+}

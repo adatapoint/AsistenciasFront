@@ -1,0 +1,64 @@
+{
+  "ASISTENTE": [
+    {
+      "id": "1128439028",
+      "nombre1": "Vincent",
+      "nombre2": "David",
+      "apellido1": "Restrepo",
+      "apellido2": null,
+      "celular": "3044000747",
+      "correo": "vincentrestrepo@gmail.com",
+      "fecha_registro": "2016-01-02",
+      "genero_id": "1",
+      "rango_edad": "4",
+      "ocupacion_id": "1",
+      "barrio_id": null,
+      "municipio_id": "266"
+    },
+    {
+      "id": "70059550",
+      "nombre1": "Carlos",
+      "nombre2": "Mario",
+      "apellido1": "González",
+      "apellido2": "Restrepo",
+      "celular": "3004949632",
+      "correo": "carlosmgonzal@gmail.com",
+      "fecha_registro": "2016-05-23",
+      "genero_id": "1",
+      "rango_edad": "2",
+      "ocupacion_id": "2",
+      "barrio_id": "94",
+      "municipio_id": null
+    },
+    {
+      "id": "1128439914",
+      "nombre1": "Xiomara",
+      "nombre2": null,
+      "apellido1": "Meneses",
+      "apellido2": "Cano",
+      "celular": "3006487850",
+      "correo": "xiomy.55@gmail.com",
+      "fecha_registro": "2016-04-15",
+      "genero_id": "2",
+      "rango_edad": "3",
+      "ocupacion_id": "1",
+      "barrio_id": "94",
+      "municipio_id": null
+    },
+    {
+      "id": "42874271",
+      "nombre1": "Martha",
+      "nombre2": "Cecilia",
+      "apellido1": "Franco",
+      "apellido2": null,
+      "celular": "3122299740",
+      "correo": "marthaceciliaf@hotmail.com",
+      "fecha_registro": "2016-07-30",
+      "genero_id": "2",
+      "rango_edad": "4",
+      "ocupacion_id": "3",
+      "barrio_id": null,
+      "municipio_id": "266"
+    }
+  ]
+}
