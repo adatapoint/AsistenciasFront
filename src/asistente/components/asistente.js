@@ -26,23 +26,21 @@ export default class Asistente extends Component {
         return (
             <Card className="card" onClick={this.handleClick}>
                 <Card.Content >
-                    <Card.Header className="header">{this.state.nombre1} {this.state.apellido1}</Card.Header> 
-                    <Card.Description>{this.state.correo}</Card.Description>
-                    <Card.Description>{this.state.id}</Card.Description>
+                    <Card.Header className="header">{this.props.nombre1} {this.props.apellido1}</Card.Header> 
+                    <Card.Description>{this.props.correo}</Card.Description>
+                    <Card.Description>{this.props.id}</Card.Description>
                 </Card.Content>
-                <div className="divider"/>
                 <Card.Content extra className="buttons">
                     <div className="divider"/>
                     <Button.Group>
-                        <Button basic circular color='green' title="Editar asistente">
+                        <Button compact className="ui green button" circular class title="Editar asistente">
                             <Icon name="edit outline" />
                         </Button>
-                        <Button basic circular color='blue' title="Ver asistencias">
+                        <Button className="ui blue button" compact circular title="Ver asistencias">
                             <Icon name="eye" />
                         </Button>
+                        <DeletePostButton compact="true" id={this.props.id} />
                     </Button.Group>
-                        <div className="divider"/>
-                        <DeletePostButton id={this.state.id} />
                 </Card.Content>
             </Card>
         )

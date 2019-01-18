@@ -1,21 +1,22 @@
 .card {
-    margin-right: 15px;
-    display: inline-block;
+    margin-right: 15px !important;
+    display: inline-block !important;
     border: 0.5px;
     border-style: groove;
-    vertical-align: top;
-    padding: 20px;
+    vertical-align: top ;
+    margin-top: 25px !important;
     cursor: pointer;
-    background-color: #e6efe9 !important;
+    width: 270px !important;
+    background-color: #eff5f2 !important;
     
 }
 
 .card:hover {
-    background-color: #b2c1b9 !important;
+    background-color: #ccddd4 !important;
 }
 
 .divider {
-    width: 15px;
+    width: 10px;
     height: auto;
     display: inline-block;
 }
@@ -26,5 +27,5 @@
 }
 
 .buttons {
-    padding: .75em 2em !important;
+    padding: .50em 3.5em !important;
 }

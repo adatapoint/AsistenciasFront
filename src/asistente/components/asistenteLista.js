@@ -10,7 +10,7 @@ export default class AsistenteLista extends Component {
             <div>
                 {
                     asistentes.map((item) => {
-                        return <Asistente key={item.id} nombre1={item.nombre1} apellido1={item.apellido1} id={item.id} correo={item.correo}/>
+                        return <Asistente {...item} key={item.id}/>
                     })
                 }
             </div>
