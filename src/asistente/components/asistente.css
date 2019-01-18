@@ -5,6 +5,13 @@
     border-style: groove;
     vertical-align: top;
     padding: 20px;
+    cursor: pointer;
+    background-color: #e6efe9 !important;
+    
+}
+
+.card:hover {
+    background-color: #b2c1b9 !important;
 }
 
 .divider {
@@ -16,4 +23,8 @@
 .header {
     font-weight: bold;
     font-size: 20px;
+}
+
+.buttons {
+    padding: .75em 2em !important;
 }

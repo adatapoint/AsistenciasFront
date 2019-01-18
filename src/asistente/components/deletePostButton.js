@@ -6,6 +6,7 @@ export default class DeletePostButton extends PureComponent {
         return (
             <Button circular basic color='red' title="Eliminar usuario">
                 <Icon name="remove user" />
+                {console.log("Esto es el deletePostButton - id " + this.props.id)}
             </Button>
         );
     }
