@@ -2,7 +2,7 @@ const path = require('path');
 
 module.exports = {
   entry: {
-    "ceez-asistencia": path.resolve(__dirname, 'src/routes/index.js'),
+    "home": path.resolve(__dirname, 'src/routes/home.js'),
   },
   output: {
     path: path.resolve(__dirname, 'dist'),

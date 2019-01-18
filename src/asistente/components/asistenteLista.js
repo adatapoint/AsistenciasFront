@@ -2,7 +2,7 @@ import React from 'react'
 import Asistente from './asistente'
 
 
-export default function AsistenteLista (props) {
+function AsistenteLista (props) {
     const asistentes = props.data.Asistentes
     return (
         <div>
@@ -16,3 +16,5 @@ export default function AsistenteLista (props) {
     )
     
 }
+
+export default AsistenteLista

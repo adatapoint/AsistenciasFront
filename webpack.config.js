@@ -17,7 +17,7 @@ module.exports = (env) => {
   return {
 
     entry: {
-      "ceez-asistencia": path.resolve(__dirname, 'src/routes/index.js'),
+      "home": path.resolve(__dirname, 'src/routes/home.js'),
     },
     output: {
       path: path.resolve(__dirname, 'dist'),

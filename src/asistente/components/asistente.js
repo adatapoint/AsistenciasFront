@@ -4,7 +4,7 @@ import './asistente.css'
 import Boton from './boton';
 import PropTypes from 'prop-types'
 
-export default class Asistente extends PureComponent {
+class Asistente extends PureComponent {
     // Aquí hay mucho para corregir con Redux
 
     handleClick = (event) => {
@@ -37,3 +37,6 @@ Asistente.propTypes = {
     correo: PropTypes.string,
     id: PropTypes.string,
 }
+
+
+export default Asistente
