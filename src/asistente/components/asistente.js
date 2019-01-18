@@ -1,27 +1,16 @@
-import React, { Component } from 'react';
+import React, { PureComponent } from 'react';
 import { Container, Card, Button, Icon } from 'semantic-ui-react';
 import './asistente.css'
-import DeletePostButton from './deletePostButton';
+import BotonEliminarAsistente from './botonEliminarAsistente';
 import PropTypes from 'prop-types'
 
-export default class Asistente extends Component {
+export default class Asistente extends PureComponent {
     // Aquí hay mucho para corregir con Redux
 
-    constructor(props){
-        super(props)
-        this.state = {
-            nombre1: props.nombre1,
-            apellido1: props.apellido1,
-            correo: props.correo,
-            id: props.id,       
-        }
-    }
-
     handleClick = (event) => {
-        this.setState({
-            
-        })
+
     }
+    
     render(){
         return (
             <Card className="card" onClick={this.handleClick}>
@@ -33,13 +22,13 @@ export default class Asistente extends Component {
                 <Card.Content extra className="buttons">
                     <div className="divider"/>
                     <Button.Group>
-                        <Button compact className="ui green button" circular class title="Editar asistente">
+                        <Button compact className="ui green button" circular title="Editar asistente">
                             <Icon name="edit outline" />
                         </Button>
                         <Button className="ui blue button" compact circular title="Ver asistencias">
                             <Icon name="eye" />
                         </Button>
-                        <DeletePostButton compact="true" id={this.props.id} />
+                        <BotonEliminarAsistente compact="true" id={this.props.id} />
                     </Button.Group>
                 </Card.Content>
             </Card>
