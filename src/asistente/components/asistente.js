@@ -2,6 +2,8 @@ import React, { PureComponent } from 'react';
 import { Container, Card, Button, Icon } from 'semantic-ui-react';
 import './asistente.css'
 import BotonEliminarAsistente from './botonEliminarAsistente';
+import BotonEditarAsistente from './botonEditarAsistente'
+import BotonVerAsistencias from './botonVerAsistencias'
 import PropTypes from 'prop-types'
 
 export default class Asistente extends PureComponent {
@@ -10,7 +12,7 @@ export default class Asistente extends PureComponent {
     handleClick = (event) => {
 
     }
-    
+
     render(){
         return (
             <Card className="card" onClick={this.handleClick}>
@@ -22,13 +24,13 @@ export default class Asistente extends PureComponent {
                 <Card.Content extra className="buttons">
                     <div className="divider"/>
                     <Button.Group>
-                        <Button compact className="ui green button" circular title="Editar asistente">
+                        <BotonEditarAsistente title="Editar asistente">
                             <Icon name="edit outline" />
-                        </Button>
-                        <Button className="ui blue button" compact circular title="Ver asistencias">
+                        </BotonEditarAsistente>
+                        <BotonVerAsistencias title="Ver asistencias">
                             <Icon name="eye" />
-                        </Button>
-                        <BotonEliminarAsistente compact="true" id={this.props.id} />
+                        </BotonVerAsistencias>
+                        <BotonEliminarAsistente id={this.props.id} />
                     </Button.Group>
                 </Card.Content>
             </Card>
