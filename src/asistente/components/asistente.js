@@ -1,9 +1,7 @@
 import React, { PureComponent } from 'react';
 import { Container, Card, Button, Icon } from 'semantic-ui-react';
 import './asistente.css'
-import BotonEliminarAsistente from './botonEliminarAsistente';
-import BotonEditarAsistente from './botonEditarAsistente'
-import BotonVerAsistencias from './botonVerAsistencias'
+import Boton from './boton';
 import PropTypes from 'prop-types'
 
 export default class Asistente extends PureComponent {
@@ -24,13 +22,9 @@ export default class Asistente extends PureComponent {
                 <Card.Content extra className="buttons">
                     <div className="divider"/>
                     <Button.Group>
-                        <BotonEditarAsistente title="Editar asistente">
-                            <Icon name="edit outline" />
-                        </BotonEditarAsistente>
-                        <BotonVerAsistencias title="Ver asistencias">
-                            <Icon name="eye" />
-                        </BotonVerAsistencias>
-                        <BotonEliminarAsistente id={this.props.id} />
+                        <Boton id={this.props.id} title="Editar asistente" icon="edit outline" color="green"/>
+                        <Boton id={this.props.id} title="Ver asistencias" icon="eye" color="blue"/>
+                        <Boton id={this.props.id} title="Eliminar asistente" icon="remove user" color="red" isDelete/>
                     </Button.Group>
                 </Card.Content>
             </Card>
